@@ -1,10 +1,18 @@
 import React from 'react';
+import PageTitle from 'component/page-title/index.jsx';
 
 class Home extends React.Component{
 	render(){
 		return(
-			<div>
-				<button class="btn btn-primary">我</button>
+			<div id="page-wrapper">
+				<PageTitle title="首页">
+					<button className="btn btn-warning">test</button>
+				</PageTitle>
+				<div className="row">
+					<div className="col-md-12">
+						body
+					</div>
+				</div>
 			</div>
 		);
 	}
